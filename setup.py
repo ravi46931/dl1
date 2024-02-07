@@ -1,4 +1,8 @@
 from setuptools import find_packages, setup
+from typing import List
+
+
+HYPEN_E_DOT='-e .'
 
 def get_requirements(file_path:str)->List[str]:
     requirements=[]
@@ -18,5 +22,5 @@ setup(
     author="ravi kumar",
     author_email='ravikumar46931@gmail.com',
     packages=find_packages(),
-    install_requires=get_requirements()
+    install_requires=get_requirements('requirements_dev.txt') # In sunny savita tutorial r"C:\Users\hp\Downloads\dl1\requirements_dev.txt"
 )
